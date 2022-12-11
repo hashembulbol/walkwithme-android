@@ -1,0 +1,28 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <style name="Accept"
+        parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/AcceptButtonStyleBackgroundColor</item>
+    </style>
+
+    <style name="Reject"
+        parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/RejectButtonStyleBackgroundColor</item>
+    </style>
+
+    <style name="AcceptButtonStyleBackgroundColor">
+        <item name="colorPrimary">@color/teal_700</item>
+
+    </style>
+    <style name="RejectButtonStyleBackgroundColor">
+        <item name="colorPrimary">@color/red</item>
+
+    </style>
+
+</resources>

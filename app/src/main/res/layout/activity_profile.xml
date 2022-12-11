@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSendReq"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendReq"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSendReq" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendReq">
+
+        <TextView
+            android:id="@+id/tvFriendpUn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username: " />
+
+        <TextView
+            android:id="@+id/tvFriendpFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name:" />
+
+        <TextView
+            android:id="@+id/tvFreindpLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name: " />
+
+        <TextView
+            android:id="@+id/tvFriendpHobbies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobbies: " />
+
+        <TextView
+            android:id="@+id/tvFriendpHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height: " />
+
+        <TextView
+            android:id="@+id/tvFriendpWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight:" />
+
+        <TextView
+            android:id="@+id/tvFriendpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: " />
+
+        <TextView
+            android:id="@+id/tvFriendpJdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joining Date: " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvHeaderDailyr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Daily Routine:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+    <TextView
+        android:id="@+id/tvProfileHeaderPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Posts:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvHeaderDailyr"
+        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFriendspPosts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileHeaderPosts" />
+
+    <Button
+        android:id="@+id/btnSendReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="send friend request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeaderDailyr">
+
+        <TextView
+            android:id="@+id/tvFriendpDiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diet: " />
+
+        <TextView
+            android:id="@+id/tvFriendpDaily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Steps: " />
+
+        <TextView
+            android:id="@+id/tvFriendpMaintained"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maintained for (Days): " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvProfileHeaderFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Friends:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvProfileHeaderPosts"
+        app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFreindspFriends"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileHeaderFriends" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvFriendspPosts" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
